@@ -40,3 +40,26 @@
     cursor: pointer;
 }
 
+.Container {
+    width: 70%;
+    height: max-content;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Container {
+        width: 90%;
+    }
+    .Root h1 {
+        font-size: 1.8em;
+    }
+}

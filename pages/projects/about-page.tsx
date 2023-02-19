@@ -24,8 +24,20 @@ const About = () => {
                     </nav>
                 </header>
                 <main className={styles.Main}>
-                    <h1>Hello and welcome to SteelMind!</h1>
-                    <p></p>
+                    <div className={styles.Container}>
+                        <h1>Hello and welcome to SteelMind!</h1>
+                        <br />
+                        <br />
+
+                        <p>
+                            We are a mental health support company. Our brand name doesn't mean the rigidity or inflexibility,
+                            But our brand name means resilience, strength, and durability.
+                        </p>
+                        <br />
+                        <p>
+                            Our work is to solve relationships problems (serious ones), stress and tension, disquiet, depression, and sorrow problems.
+                        </p>
+                    </div>
                 </main>
             </div>
         </>
