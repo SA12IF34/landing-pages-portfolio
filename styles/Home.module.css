@@ -1,5 +1,4 @@
 /* Properties */
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600&display=swap');
 
 
 
@@ -13,7 +12,6 @@
     height: max-content;
     background: radial-gradient(circle at 90% 40%, rgb(106, 158, 255) , transparent 30%),
             radial-gradient(circle at -40% 75%, #ee4989 , transparent 45%);
-    font-family: 'Open Sans', sans-serif;
     overflow: hidden;
 }
 
@@ -128,7 +126,8 @@
 }
 
 
-.Skills>div>div {
+.Skills>div>div, 
+.Skills>div>span {
     width: 100%;
     /* min-width: 300px; */
     background-color: var(--main-color);
@@ -295,6 +294,7 @@ button.twoBtn i {
   width: 100%;
   height: 100%;
   font-size: 0.9em;
+  margin-top: 10px;
 }
 .Container .Project p span {
   font-size: 1.15em !important;

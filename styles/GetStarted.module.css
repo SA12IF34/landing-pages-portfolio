@@ -1,0 +1,266 @@
+
+#Root {
+    --main-color: rgb(124, 58, 31);
+    --color: rgb(95, 44, 24);
+    --fcolor: rgba(17, 17, 17, 0.4);
+    width: 100%;
+    height: max-content;
+    color: white;
+}   
+
+#Root h1 {
+    font-size: 2em;
+    
+}
+
+#Root img {
+    width: 30%;
+    min-width: 300px;
+    max-width: 500px;
+    height: auto;
+}
+
+#Root ::selection {
+    color: var(--main-color);
+    background-color: white;
+}
+
+#Root header {
+    background-color: var(--color);
+    padding: 15px 12px 0px 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Title {
+    color: white;
+    text-decoration: none;  
+    align-self: center;
+}
+
+.Nav {
+    width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.Nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.Nav ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+ 
+.Nav ul li:hover {
+    color: gold;
+}
+
+
+#Root section {
+    width: 100%;
+    height: max-content;
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: 60px;
+}
+
+#Root section>div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Root button {
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.First {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--main-color);
+}
+
+.First>div {
+    width: 50% !important;
+    min-width: 330px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--main-color);
+}
+
+.Justification {
+    align-items: center;
+}
+
+.Justification h1,
+.Justification p {
+    max-width: 320px;
+}
+
+.Justification button {
+    color: var(--color);
+    cursor: pointer;
+    background-color: white;
+}
+
+.Justification button:hover {
+    background-color: var(--color);
+    color: white;
+}
+
+.Img {
+    height: max-content;
+
+    align-items: center;
+}
+
+.Second {
+    padding: 0;
+    font-weight: bold;
+    background-color: white;
+    color: var(--color);
+}
+
+.Bait { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    height: max-content;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.Bait img {
+    min-width: 330px !important;
+}
+
+.imgContainer {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+}
+
+.imgContainer img {
+    width: 75% !important;
+    justify-self: center;
+    align-self: center;
+}
+
+.Words {
+    margin-bottom: 65px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.Bait h1 {
+    margin-bottom: 25px;
+}
+
+.Bait p {
+    font-size: 1.1em;
+    /* width: 50%; */
+    min-width: 280px;
+    max-width: 350px;
+    text-transform: capitalize;
+}
+
+
+.sBait {
+    flex-direction: row-reverse;
+}
+
+
+.tBait>div {
+    justify-self: center;
+    align-self: center;
+    width: max-content;
+    max-width: 90%;
+}
+
+
+.tBait button {
+    color: white;
+    cursor: pointer;
+    background-color: var(--main-color);
+}
+
+.Footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    padding-top: 30px;
+    background-color: var(--color);
+}
+
+.Footer>div {
+    width: max-content;
+    height: max-content;
+}
+.Footer .Phrase {
+    max-width: 30%;
+}
+.Footer p {
+    color: var(--fcolor);
+    font-size: 1.3em;
+    font-weight: bold;
+
+}
+.Footer h4 {
+    color: gainsboro;
+}
+.Footer ul{
+    list-style: none;
+    color: var(--fcolor);
+    font-weight: bold;
+}
+.Footer ul li {
+    margin: 7px;
+    margin-left: 0px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #Root header,
+    .Nav {
+        justify-content: space-around;
+    }
+
+    .First {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #Root img {
+        max-width: 350px;
+        height: auto;
+    }
+}

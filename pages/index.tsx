@@ -8,7 +8,8 @@ import {BiDownArrowAlt, BiUpArrowAlt} from 'react-icons/bi'
 import {PerformanceEvent} from 'typescript/';
 import { IconType } from 'react-icons';
 
-
+import getStarted from '@/public/getStarted.png';
+import leadPage from '@/public/leadPage.png';
 
 export default function Home() {
 
@@ -29,7 +30,6 @@ export default function Home() {
   }
 
   function loadProjects(): void {
-    console.log("start loading projects ...")
     let projects  = document.querySelectorAll("#Container span .project") as NodeListOf<HTMLElement> ;
     let projectsParent = document.querySelector("#Container") as HTMLDivElement;
     let btnRight = document.querySelector(".one-btn") as HTMLButtonElement;
@@ -45,13 +45,10 @@ export default function Home() {
       angles.push(num)
       projects[i].style.cssText = `transform: rotateY(${num}deg)`;
       projects[i].parentElement!.style.cssText = `transform: rotateZ(${num}deg)`;
-      console.log(projects[i])
-      console.log(projects[i].parentElement);
       num+=difference;
     }
 
-    btnRight.onclick = () => {
-      console.log("hello")
+    btnLeft.onclick = () => {
       n+=difference;
       projectsParent.style.cssText = `transform: rotateY(${n}deg)`;
       for (let j=0; j < projects.length; j++) {
@@ -60,14 +57,23 @@ export default function Home() {
       }
     }
 
-    btnLeft.onclick = () => {
-      console.log("hello")
+    btnRight.onclick = () => {
       n-=difference;
       projectsParent.style.cssText = `transform: rotateY(${n}deg)`;
       for (let j=0; j < projects.length; j++) {
         angles[j]+=difference;
         projects[j].style.cssText = `transform: rotateY(${angles[j]}deg)`;
       }
+    }
+
+    let getStarted = document.getElementById("get-started") as HTMLDivElement;
+    let leadPage = document.getElementById("lead") as HTMLDivElement;
+
+    getStarted.onclick = () => {
+      window.location.assign("/projects/get-started-page/");
+    }
+    leadPage.onclick = () => {
+      window.location.assign("/projects/lead-capture-apge/")
     }
 
   }
@@ -86,6 +92,22 @@ export default function Home() {
         <title>Hello onichan</title>
         <script src={"https://kit.fontawesome.com/9b81eb347f.js"} crossOrigin={"anonymous"} ></script>
       </Head>
+      <style jsx global>{`
+                :root {
+                    --color: rgb(95, 44, 24);
+                }
+                body::-webkit-scrollbar {
+                    
+                   width: 7px;
+                    background-color: white;
+                }
+
+                body::-webkit-scrollbar-thumb {
+                    background-color: rgba(58, 58, 58, 0.5);
+                    border-radius: 999px;
+                    width: 5px;
+                }
+            `}</style>
       <div className={styles.mainRoot}>
         <main>
           <Image className={styles.Banner} src={banner} alt="banner" />
@@ -104,7 +126,7 @@ export default function Home() {
               <div className={styles.one}>
                 <p>
                   My name Is Saif , A fullStack web dev and landing-pages building expert. 
-                  I can build for you anytype of landing-pages, such as (squeez page, get started landing page, etc...), and home pages as well.
+                  I can build for you anytype of landing-pages, such as (squeeze page, get started landing page, <Link title='Landing Pages Types' href={"/landing-pages-types"}>etc...</Link>).
                 </p>
               </div>
               <div className={styles.two}></div>
@@ -113,12 +135,12 @@ export default function Home() {
           <div className={styles.Skills}>
             <div>
               <div className={styles.Label}>
-                <span>landing pages building skills</span>
+                <span>landing pages techs & skills</span>
                 <button onClick={handleClick} >
                   {!num ? (<BiDownArrowAlt className={styles.Icon} />) : (<BiUpArrowAlt className={styles.Icon} />)}
                 </button>
               </div>
-              <div id="container" className={styles.skillsContainer}>
+              <span id="container" className={styles.skillsContainer}>
                 <ul>
                   <li>html</li>
                   <li>css</li>
@@ -129,7 +151,7 @@ export default function Home() {
                   <li>threeJs</li>
                   <li>chakra-ui</li>
                 </ul>
-              </div>
+              </span>
             </div>
           </div>
           <div  className={styles.Projects} >
@@ -147,22 +169,25 @@ export default function Home() {
                   </div>
                 </span>
                 <span>
-                  <div id="blog" className={`${styles.Project} project`}>
-                    {/* <img src="./blog.png" alt="blogger project"> */}
+                  <div id="lead" className={`${styles.Project} project`}>
+                    <Image src={leadPage} alt="lead capture page, example" />
                     <p>
-                      <span>A Blogger</span><br/><br/>
-                      My own blogger :) .
+                      <span>Lead Capture Page</span><br/><br/>
+                        A lead capture page is a page designed to generate new leads 
+                        by showing it's potential customers the importance of the bisuness or industry and collecting thier info.
                     </p>
                   </div>
                 </span>
-                <span>
-                  <div id="ecommerce" className={`${styles.Project} project`}>
-                    {/* <img src="./ecommerce.png" alt="ecommerce project"> */}
+                <span> 
+                  
+                  <div id="get-started" className={`${styles.Project} project`}>
+                    <Image src={getStarted} alt="ecommerce project" />
                     <p>
-                      <span>E-commerce</span><br /><br />
-                      A project that is built using djnago and reactjs.
+                      <span>Get Started Page</span><br /><br />
+                      An academy's get started landing page .
                     </p>
                   </div>
+                  
                 </span>
               </div>
               <button id={styles.faceBtn} className={`${styles.oneBtn} one-btn`}><i className="fa-solid fa-chevron-right i-one"></i></button>

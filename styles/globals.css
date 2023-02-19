@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600&display=swap');
+
 * {
   padding: 0px;
   margin: 0;
@@ -8,9 +10,13 @@ html, body {
   width: 100%;
   min-height: 100vh;
   max-height: max-content;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .parent {
   --main-color: rgb(231, 236, 244);
+  
   background-color: var(--main-color);
-}
+
+} 
+
