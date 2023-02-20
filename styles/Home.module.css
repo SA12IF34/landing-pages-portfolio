@@ -240,7 +240,7 @@ button.twoBtn i {
 
 #Projects .Container {
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   position: relative;
   transform-style: preserve-3d;
   transform: rotateY(0deg);
@@ -252,7 +252,7 @@ button.twoBtn i {
   top: 50%;
   left: 50%;
   width: 50px;
-  height: 450px;
+  min-height: 450px;
   background-color: red;
   transform-style: preserve-3d;
   rotate: x 90deg;
@@ -391,7 +391,6 @@ button.twoBtn i {
 
     #Projects .Container span .Project {
         width: 220px;
-        height: 220px;
     }
 
     #faceBtn {

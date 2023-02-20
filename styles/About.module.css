@@ -36,7 +36,7 @@
 }
 
 .Header nav ul li {
-    margin: 5px;
+    margin: 7px;
     cursor: pointer;
 }
 
@@ -53,6 +53,9 @@
     .Container {
         width: 80%;
     }
+    #Img {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -61,5 +64,10 @@
     }
     .Root h1 {
         font-size: 1.8em;
+        
+    }
+
+    #Img {
+        width: 95%;
     }
 }

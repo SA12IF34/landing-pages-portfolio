@@ -5,11 +5,10 @@ import Link from 'next/link';
 import styles from '@/styles/Home.module.css';
 import banner from '@/public/banner.png';
 import {BiDownArrowAlt, BiUpArrowAlt} from 'react-icons/bi'
-import {PerformanceEvent} from 'typescript/';
-import { IconType } from 'react-icons';
 
 import getStarted from '@/public/getStarted.png';
 import leadPage from '@/public/leadPage.png';
+import about from '@/public/about.png';
 
 export default function Home() {
 
@@ -66,24 +65,11 @@ export default function Home() {
       }
     }
 
-    let getStarted = document.getElementById("get-started") as HTMLDivElement;
-    let leadPage = document.getElementById("lead") as HTMLDivElement;
-
-    getStarted.onclick = () => {
-      window.location.assign("/projects/get-started-page/");
-    }
-    leadPage.onclick = () => {
-      window.location.assign("/projects/lead-capture-apge/")
-    }
-
   }
 
   useEffect(() => {
     loadProjects();
   }, [])
-
-
-  
 
 
   return (
@@ -159,28 +145,27 @@ export default function Home() {
               <h2 style={{position: "absolute", top: "0%", left: "5%"}}>Projects</h2>
               <div id="Container" className={styles.Container}>
                 <span>
-                  <div id="real-estate" className={`${styles.Project} project`}>
-                    {/* <img src="./real-estate.png" alt="real-estate project"> */}
-                    <p>
-                      <span>A Real-Estate</span><br/><br/>
-                      A project is built using reactJs, nextJs and several javascript
-                      libraries.
-                    </p>
-                  </div>
+                    <div onClick={() => {location.href="/projects/about-page/"}} id="about" className={`${styles.Project} project`}>
+                      <Image src={about} alt="about page, mental support" />
+                      <p>
+                        <span>About Page</span><br/><br/>
+                        An about page that gives it's visitors trustability and reliability to use the platform.
+                      </p>
+                    </div>
                 </span>
                 <span>
-                  <div id="lead" className={`${styles.Project} project`}>
+                  <div onClick={() => {location.href="/projects/lead-capture-page/"}} id="lead" className={`${styles.Project} project`}>
                     <Image src={leadPage} alt="lead capture page, example" />
                     <p>
                       <span>Lead Capture Page</span><br/><br/>
-                        A lead capture page is a page designed to generate new leads 
-                        by showing it's potential customers the importance of the bisuness or industry and collecting thier info.
+                        Is a page designed to generate new leads 
+                        by showing it's visitors the bisuness or industry and collecting their info.
                     </p>
                   </div>
                 </span>
                 <span> 
                   
-                  <div id="get-started" className={`${styles.Project} project`}>
+                  <div onClick={() => {location.href="/projects/get-started-page/"}} id="get-started" className={`${styles.Project} project`}>
                     <Image src={getStarted} alt="ecommerce project" />
                     <p>
                       <span>Get Started Page</span><br /><br />
