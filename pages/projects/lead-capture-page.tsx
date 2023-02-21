@@ -14,7 +14,7 @@ const Product = () => {
             <main className={styles.Root}>
                 <header className={styles.Header}>
                     <h1>
-                        Get A Landing pages full guide for beginners E-book for free
+                        Get A Landing pages full guide for beginners E-book
                     </h1>
                 </header>
                 <div className={styles.Product}>

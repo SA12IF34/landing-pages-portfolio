@@ -394,13 +394,13 @@ button.twoBtn i {
     }
 
     #faceBtn {
-      top: 100%;
+      top: 115%;
     }
     .oneBtn {
-      left: 60% !important;
+      left: 70% !important;
     }
     .twoBtn {
-      right: 60% !important;
+      right: 70% !important;
     }
 
     .Projects {

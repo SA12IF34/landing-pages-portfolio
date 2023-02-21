@@ -1,5 +1,6 @@
 {
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/api/hello": "pages/api/hello.js",
   "/": "pages/index.html",
@@ -8,6 +9,5 @@
   "/projects/get-started-page": "pages/projects/get-started-page.html",
   "/projects": "pages/projects.html",
   "/projects/lead-capture-page": "pages/projects/lead-capture-page.html",
-  "/_error": "pages/_error.js",
   "/404": "pages/404.html"
 }

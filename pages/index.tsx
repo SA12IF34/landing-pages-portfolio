@@ -75,7 +75,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Hello onichan</title>
+        <title>LandingAce</title>
         <script src={"https://kit.fontawesome.com/9b81eb347f.js"} crossOrigin={"anonymous"} ></script>
       </Head>
       <style jsx global>{`
@@ -111,8 +111,8 @@ export default function Home() {
             <div className={styles.Info}>
               <div className={styles.one}>
                 <p>
-                  My name Is Saif , A fullStack web dev and landing-pages building expert. 
-                  I can build for you anytype of landing-pages, such as (squeeze page, get started landing page, <Link title='Landing Pages Types' href={"/landing-pages-types"}>etc...</Link>).
+                My name is Saif, and I'm a full-stack web developer and expert in building landing pages. 
+                I can create any type of landing pages you need, including squeeze pages, get started landing pages, and <Link title='Landing Pages Types' href={"/landing-pages-types"}>more</Link>.
                 </p>
               </div>
               <div className={styles.two}></div>
@@ -142,7 +142,7 @@ export default function Home() {
           </div>
           <div  className={styles.Projects} >
             <div id={styles.Projects}>
-              <h2 style={{position: "absolute", top: "0%", left: "5%"}}>Projects</h2>
+              <h2 style={{position: "absolute", top: "-10%", left: "5%"}}>Projects</h2>
               <div id="Container" className={styles.Container}>
                 <span>
                     <div onClick={() => {location.href="/projects/about-page/"}} id="about" className={`${styles.Project} project`}>

@@ -54,7 +54,7 @@
         width: 80%;
     }
     #Img {
-        width: 80%;
+        width: 80% !important;
     }
 }
 
@@ -68,6 +68,6 @@
     }
 
     #Img {
-        width: 95%;
+        width: 95% !important;
     }
 }
