@@ -2,7 +2,7 @@
 #Root {
     --main-color: rgb(124, 58, 31);
     --color: rgb(95, 44, 24);
-    --fcolor: rgba(17, 17, 17, 0.4);
+    --fcolor: rgba(10, 10, 10, 0.35);
     width: 100%;
     height: max-content;
     color: white;
@@ -223,6 +223,7 @@
 .Footer>div {
     width: max-content;
     height: max-content;
+    margin: 7px;
 }
 .Footer .Phrase {
     max-width: 30%;
@@ -248,19 +249,31 @@
 
 
 
+@media screen and (max-width: 550px) {
+    .Phrase {
+        max-width: 95% !important;
+        margin-bottom: 15px !important;
+    }
+
+    .Footer {
+        justify-content: space-between !important;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     #Root header,
     .Nav {
-        justify-content: space-around;
+        justify-content: space-around !important;
     }
 
     .First {
-        flex-direction: column-reverse;
-        align-items: center;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
     }
 
     #Root img {
-        max-width: 350px;
-        height: auto;
+        max-width: 350px !important;
+        height: auto !important;
     }
 }

@@ -121,7 +121,7 @@ export default function Home() {
           <div className={styles.Skills}>
             <div>
               <div className={styles.Label}>
-                <span>landing pages techs & skills</span>
+                <span>skills & techs used</span>
                 <button onClick={handleClick} >
                   {!num ? (<BiDownArrowAlt className={styles.Icon} />) : (<BiUpArrowAlt className={styles.Icon} />)}
                 </button>
@@ -149,7 +149,7 @@ export default function Home() {
                       <Image src={about} alt="about page, mental support" />
                       <p>
                         <span>About Page</span><br/><br/>
-                        An about page that gives it's visitors trustability and reliability to use the platform.
+                        about page that gives it's visitors trustability and reliability to use the platform.
                       </p>
                     </div>
                 </span>
@@ -158,7 +158,7 @@ export default function Home() {
                     <Image src={leadPage} alt="lead capture page, example" />
                     <p>
                       <span>Lead Capture Page</span><br/><br/>
-                        Is a page designed to generate new leads 
+                        a page designed to generate new leads 
                         by showing it's visitors the bisuness or industry and collecting their info.
                     </p>
                   </div>
@@ -169,7 +169,7 @@ export default function Home() {
                     <Image src={getStarted} alt="ecommerce project" />
                     <p>
                       <span>Get Started Page</span><br /><br />
-                      An academy's get started landing page .
+                      academy's get started landing page .
                     </p>
                   </div>
                   

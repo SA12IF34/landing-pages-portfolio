@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/nTCzQntzhsfh8E1yqKoid/_buildManifest.js",
-    "static/nTCzQntzhsfh8E1yqKoid/_ssgManifest.js"
+    "static/mYy9br61_gtoTekjAKv8i/_buildManifest.js",
+    "static/mYy9br61_gtoTekjAKv8i/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -19,7 +19,7 @@
       "static/chunks/664-e2359597ac708d8d.js",
       "static/chunks/857-9d53dc4f6d813a36.js",
       "static/css/b0251eb700084f99.css",
-      "static/chunks/pages/index-0d6b4bbb4ce4853f.js"
+      "static/chunks/pages/index-26d2760c6aa38e08.js"
     ],
     "/_app": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
@@ -65,7 +65,7 @@
       "static/chunks/959-a10dfcc8f0756844.js",
       "static/chunks/664-e2359597ac708d8d.js",
       "static/chunks/857-9d53dc4f6d813a36.js",
-      "static/css/9045f2eccdbe91e7.css",
+      "static/css/90824ed8ed708245.css",
       "static/chunks/pages/projects/get-started-page-f6603e53c170c9f6.js"
     ],
     "/projects/lead-capture-page": [
