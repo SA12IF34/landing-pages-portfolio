@@ -29,6 +29,7 @@
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.15em;
 }
 
 .contentContainer {
@@ -43,10 +44,19 @@
     align-items: center;
 }
 
-.Banner {
+.Banner, 
+.Bg {
     width: 100%;
     height: auto;
     max-height: 65vh;
+}
+
+.Bg {
+    height: 100%;
+    background-color: rgb(255 163 209 / 40%);
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
 
 /* Sections */
@@ -380,8 +390,11 @@ button.twoBtn i {
         font-size: 2.2em;
     }
     .contentContainer h3 {
-        font-size: 1.2em;
+        font-size: 1.2em !important;
     }
+
+    
+
 }
 
 @media screen and (max-width: 680px) {

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/Home.module.css';
-import banner from '@/public/banner.png';
+import banner from '@/public/banner.jpg';
 import {BiDownArrowAlt, BiUpArrowAlt} from 'react-icons/bi'
 
 import getStarted from '@/public/getStarted.png';
@@ -79,17 +79,15 @@ export default function Home() {
         <script src={"https://kit.fontawesome.com/9b81eb347f.js"} crossOrigin={"anonymous"} ></script>
       </Head>
       <style jsx global>{`
-                :root {
-                    --color: rgb(95, 44, 24);
-                }
+
                 body::-webkit-scrollbar {
                     
                    width: 7px;
-                    background-color: white;
+                    background-color: rgb(231, 236, 244);
                 }
 
                 body::-webkit-scrollbar-thumb {
-                    background-color: rgba(58, 58, 58, 0.5);
+                    background-color: rgb(176, 186, 201);
                     border-radius: 999px;
                     width: 5px;
                 }
@@ -97,6 +95,7 @@ export default function Home() {
       <div className={styles.mainRoot}>
         <main>
           <Image className={styles.Banner} src={banner} alt="banner" />
+          <div className={styles.Bg}></div>
           <div className={styles.contentContainer}>
             <h1>
               Welcome!!
