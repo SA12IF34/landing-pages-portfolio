@@ -199,7 +199,7 @@ export default function Home() {
                   <input type="hidden" name="access_key"
                       value="a51e0962-12dd-43c9-8339-021ca55d9582" />
                   <input type="hidden" name="redirect"
-                      value="/" />
+                      value="https://portfolio.landing-page.saifchan.site/" />
                   <input type="text" name="name" id="name"
                       placeholder="your name" />
                   <input type="email" name="email" id={styles.Email}
