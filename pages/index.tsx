@@ -119,12 +119,12 @@ export default function Home() {
           </div>
           <div className={styles.Skills}>
             <div>
-              <div className={styles.Label}>
-                <span>skills & techs used</span>
+              <span className={styles.Label}>
+                <span>skills & techs</span>
                 <button onClick={handleClick} >
                   {!num ? (<BiDownArrowAlt className={styles.Icon} />) : (<BiUpArrowAlt className={styles.Icon} />)}
                 </button>
-              </div>
+              </span>
               <span id="container" className={styles.skillsContainer}>
                 <ul>
                   <li>html</li>
